@@ -8,12 +8,14 @@ script:
 
 deploy:
   provider: elasticbeanstalk
+  region: "us-east-1"
   access_key_id: $aws_access_key
   secret_access_key: "$aws_secret"
-  region: "us-east-1"
   env: "React-env"
   app: "react"
   bucket_name: "elasticbeanstalk-us-east-1-995604946987"
   bucket_path: "react"
   on:
     branch: main
+
+
