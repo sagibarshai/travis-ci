@@ -14,7 +14,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-         some first change! @
+         some first change! 
         </a>
       </header>
     </div>
