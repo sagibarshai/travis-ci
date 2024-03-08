@@ -1,0 +1,7 @@
+sudo: required
+services:
+  - docker
+before_install:
+- docker build -t 315426346/travis-ci:latest .
+script:
+  - docker run -f Dockerfile.dev 315426346/travis-ci npm run test
