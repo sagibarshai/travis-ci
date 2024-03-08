@@ -11,9 +11,9 @@ deploy:
   region: "us-east-1"
   access_key_id: $access_key_id
   secret_access_key: "$secret_access_key"
-  env: "React-env"
   app: "react"
-  bucket_name: "elasticbeanstalk-us-east-1-995604946987"
+  env: "React-env"
+  bucket_name: elasticbeanstalk-us-east-1-995604946987
   bucket_path: "react"
   on:
     branch: main

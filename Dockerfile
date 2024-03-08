@@ -4,6 +4,6 @@ COPY ./package.json .
 RUN npm i
 COPY ./ .
 RUN npm run build
-EXPOSE 80
 FROM nginx
+EXPOSE 80
 copy --from=node_builder /usr/app/build /usr/share/nginx/html
