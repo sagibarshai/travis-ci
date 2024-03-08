@@ -4,4 +4,4 @@ services:
 before_install:
 - docker build -t 315426346/travis-ci:latest -f Dockerfile.dev  .
 script:
-  - docker run 315426346/travis-ci npm run test
+  - docker run -e CI=true 315426346/travis-ci npm run test
