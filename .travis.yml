@@ -14,5 +14,6 @@ deploy:
   env: "React-env"
   app: "react"
   bucket_name: "elasticbeanstalk-us-east-1-995604946987"
+  bucket_path: "react"
   on:
     branch: main
