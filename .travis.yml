@@ -8,15 +8,14 @@ script:
 
 deploy:
   provider: elasticbeanstalk
-  region: "us-east-1c"
+  region: "us-east-1"
   access_key_id: $access_key_id
   secret_access_key: "$secret_access_key"
   app: "react"
   env: "React-env"
-  bucket_name: "elasticbeanstalk-us-east-1c-995604946987"
+  bucket_name: "elasticbeanstalk-us-east-1-995604946987"
   bucket_path: "react"
   dockerfile: Dockerfile
-
   on:
     branch: main
 
