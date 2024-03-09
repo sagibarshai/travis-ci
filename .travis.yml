@@ -13,8 +13,10 @@ deploy:
   secret_access_key: "$secret_access_key"
   app: "react"
   env: "React-env"
-  bucket_name: elasticbeanstalk-us-east-1-995604946987
+  bucket_name: "elasticbeanstalk-us-east-1-995604946987"
   bucket_path: "react"
+  dockerfile: Dockerfile
+
   on:
     branch: main
 
